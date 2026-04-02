@@ -114,7 +114,7 @@
   .home-hero__title {
     font-size: 50px;
     max-width: 100%;
-    min-height: clamp(16.5rem, 50vh, 28rem);
+    min-height: clamp(10rem, 30vh, 15rem);
   }
 }
 
@@ -509,6 +509,26 @@
   flex: 0 0 min(15rem, 76vw);
   overflow: hidden;
   border-radius: var(--radius-sm);
+}
+
+.home-gallery .case-study-gallery__header-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.home-gallery .case-study-gallery__header-row .case-study-gallery__heading {
+  margin-bottom: 0;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.home-gallery .case-study-gallery__header-row .case-study-gallery__controls {
+  flex-shrink: 0;
+  margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
