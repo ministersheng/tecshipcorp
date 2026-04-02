@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | TecShipCorp</title>
+  <meta name="description" content="Contact TecShipCorp for base life support requirements, capability statements, or contracting inquiries. Response within 24 hours.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/main.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="announcement-bar" role="region" aria-label="Announcement">
+      <p class="announcement-bar__text">Proudly Supporting U.S. &amp; Allied Forces Across the Indo-Pacific</p>
+    </div>
+    <div class="ct-section-inner-wrap">
+      <div class="ct-new-columns">
+        <div class="ct-div-block">
+          <a class="ct-link" href="index.html">
+            <img class="ct-image" src="public/images/brand/smart-nation-supply-logo-long.webp" alt="TecShipCorp" width="320" height="56" decoding="async">
+          </a>
+        </div>
+        <div class="ct-div-block">
+          <a class="topbar__cta-link" href="contact.html">
+            <span class="topbar__cta-text">Request Capability Statement</span>
+            <svg class="topbar__cta-svg" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" d="M10 7l5 5-5 5"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="ct-new-columns">
+        <div class="ct-div-block">
+          <div class="oxy-pro-menu">
+            <button type="button" class="oxy-pro-menu-mobile-open-icon" aria-expanded="false" aria-controls="topbar-drawer" aria-label="Open menu" data-topbar-toggle>
+              <span class="topbar__menu-icon topbar__menu-icon--bars" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" focusable="false"><path fill="currentColor" d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></svg></span>
+              <span class="topbar__menu-icon topbar__menu-icon--close" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" focusable="false"><path fill="currentColor" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></span>
+            </button>
+            <div class="oxy-pro-menu-container oxy-pro-menu-dropdown-links-visible-on-mobile oxy-pro-menu-show-dropdown oxy-pro-menu-init">
+              <div class="menu-main-container">
+                <ul id="menu-main" class="oxy-pro-menu-list">
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="capabilities.html">Capabilities</a></li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="projects/keris-strike-2025.html">Keris Strike 25</a></li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="operations.html">Operations</a></li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="about.html">About</a></li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="contact.html" class="is-current" aria-current="page">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="topbar-drawer" class="topbar__drawer" data-topbar-drawer>
+      <div class="menu-main-container">
+        <ul class="oxy-pro-menu-list">
+          <li class="menu-item"><a href="capabilities.html">Capabilities</a></li>
+          <li class="menu-item"><a href="projects/keris-strike-2025.html">Keris Strike 25</a></li>
+          <li class="menu-item"><a href="operations.html">Operations</a></li>
+          <li class="menu-item"><a href="about.html">About</a></li>
+          <li class="menu-item"><a href="contact.html" class="is-current" aria-current="page">Contact</a></li>
+          <li class="menu-item menu-item--cta"><a href="capabilities.html" class="topbar__drawer-cta"><span class="topbar__cta-text">Request Capability Statement</span><svg class="topbar__cta-svg" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" d="M10 7l5 5-5 5"/></svg></a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <header class="page-hero">
+      <div class="container">
+        <h4 class="heading-eyebrow page-hero__kicker">Get in Touch</h4>
+        <h1 id="contact-title" class="about-hero__title">
+          <span class="sr-only">Contact Us</span>
+          <span class="typing-effect-once" aria-hidden="true">Contact Us</span>
+        </h1>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container contact-layout">
+        <form class="contact-form" action="/api/contact" method="POST" novalidate>
+          <h2 class="contact-aside__title">Take the First Step Towards Collaboration</h2>
+          <div class="contact-form__fields">
+            <div class="form-field">
+              <label for="contact-name" class="label">NAME <span class="label__required" aria-hidden="true">*</span></label>
+              <input type="text" id="contact-name" name="name" class="input" required autocomplete="name">
+            </div>
+            <div class="form-field">
+              <label for="contact-email" class="label">BUSINESS EMAIL <span class="label__required" aria-hidden="true">*</span></label>
+              <input type="email" id="contact-email" name="email" class="input" required autocomplete="email">
+            </div>
+            <div class="form-field">
+              <label for="contact-phone" class="label">PHONE NUMBER <span class="label__required" aria-hidden="true">*</span></label>
+              <input type="tel" id="contact-phone" name="phone" class="input" required autocomplete="tel">
+            </div>
+            <div class="form-field">
+              <label for="contact-company" class="label">COMPANY / INSTITUTION <span class="label__required" aria-hidden="true">*</span></label>
+              <input type="text" id="contact-company" name="company" class="input" required autocomplete="organization">
+            </div>
+          </div>
+          <input type="text" name="website" class="contact-form__honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="contact-form__captcha">
+            <div
+              class="cf-turnstile"
+              data-sitekey="0x4AAAAAACzfusm25-A-sqHZ"
+              data-theme="light"
+            ></div>
+          </div>
+          <p class="contact-form__status" data-form-status aria-live="polite"></p>
+          <button type="submit" class="btn btn--primary btn--lg contact-form__submit">Send Message</button>
+        </form>
+
+        <aside class="contact-aside" aria-label="Contact details">
+          <p class="contact-aside__value"><strong>Ready to discuss your base life support requirements.</strong></p>
+          <p class="contact-aside__value">TecShipCorp provides base life support, operational logistics, and procurement services for U.S. military exercises and operations in the United States, the Indo-Pacific, and other regions worldwide. Whether you&apos;re scoping a new requirement, requesting a capability statement, or coordinating an upcoming exercise, our team is ready to support.</p>
+          <h2 class="contact-aside__title">Direct contact</h2>
+          <div class="contact-aside__item">
+            <p class="contact-aside__label">Contracts</p>
+            <p class="contact-aside__value"><a href="mailto:calvin@tecshipcorp.com">calvin@tecshipcorp.com</a></p>
+            <img class="contact-aside__logo" src="public/images/brand/smart-nation-supply-logo-square-main-1.webp" alt="TecShipCorp" width="400" height="400" decoding="async">
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__columns">
+        <div class="footer__col footer__col--brand">
+          <a href="index.html" class="footer__logo-link" aria-label="TecShipCorp home">
+            <img class="footer__logo-img" src="public/images/brand/smart-nation-supply-logo-square-main-1.webp" alt="" width="200" height="200" decoding="async">
+          </a>
+          <div class="footer__brand-copy">
+            <p class="footer__enquiry">
+              <strong class="footer__enquiry-label">Email Enquiry:</strong>
+              <a class="footer__enquiry-mail" href="mailto:calvin@tecshipcorp.com">calvin@tecshipcorp.com</a>
+            </p>
+            <p class="footer__desc">TecShipCorp delivers base life support and field infrastructure for U.S. military exercises across the United States, the Indo-Pacific, and other regions—camp systems, power, hygiene, cold storage, laundry, interpreters, and daily coordination with your team on the ground. Operational dining scales with headcount from site build-through to redeployment.</p>
+          </div>
+        </div>
+        <div class="footer__nav-row">
+          <nav class="footer__col footer__col--site" aria-label="Explore">
+            <h4 class="footer__heading">Explore</h4>
+            <a class="footer__menu-link" href="capabilities.html">Capabilities</a>
+            <a class="footer__menu-link" href="projects/keris-strike-2025.html">Keris Strike 25</a>
+            <a class="footer__menu-link" href="operations.html">Operations</a>
+            <a class="footer__menu-link" href="about.html">About</a>
+            <a class="footer__menu-link" href="contact.html">Contact</a>
+            <a class="footer__menu-link" href="policy.html">Privacy Policy</a>
+          </nav>
+          <nav class="footer__col footer__col--portfolio" aria-label="Portfolio">
+            <h4 class="footer__heading">Portfolio</h4>
+            <a class="footer__menu-link" href="projects/keris-strike-2025.html">Keris Strike 2025</a>
+            <a class="footer__menu-link" href="operations.html#slide-the-city">Slide The City</a>
+            <a class="footer__menu-link" href="projects/cloudora-festival.html">Cloudora Festival</a>
+          </nav>
+          <nav class="footer__col footer__col--capabilities" aria-label="Capabilities">
+            <h4 class="footer__heading">Capabilities</h4>
+            <a class="footer__menu-link" href="capabilities.html#base-life-support">Base Life Support</a>
+            <a class="footer__menu-link" href="capabilities.html#base-life-support">Field infrastructure</a>
+            <a class="footer__menu-link" href="capabilities.html#base-life-support">Power &amp; utilities</a>
+            <a class="footer__menu-link" href="capabilities.html#base-life-support">Hygiene &amp; sanitation</a>
+            <a class="footer__menu-link" href="capabilities.html#catering-food-service">Field catering &amp; food services</a>
+            <a class="footer__menu-link" href="capabilities.html#base-life-support">Laundry &amp; linen sustainment</a>
+            <a class="footer__menu-link" href="capabilities.html#base-life-support">Interpreter &amp; language support</a>
+            <a class="footer__menu-link" href="capabilities.html#base-life-support">Camp setup, teardown &amp; redeployment</a>
+            <a class="footer__menu-link" href="capabilities.html#base-life-support">Site logistics &amp; daily coordination</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 TecShipCorp. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="src/js/nav.js" defer></script>
+  <script src="src/js/typing-effect.js" defer></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="src/js/contact-formspree.js" defer></script>
+</body>
+</html>
+
+

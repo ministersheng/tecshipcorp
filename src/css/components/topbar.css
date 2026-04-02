@@ -1,0 +1,508 @@
+/* ==========================================================================
+   Header — ct-section-inner-wrap → two ct-new-columns rows
+   Row 1: logo | topbar__cta-link (desktop ≥769px; mobile uses drawer CTA)
+   Row 2: oxy-pro-menu (mobile bars + desktop menu-main)
+   ========================================================================== */
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-sticky);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: var(--bg-primary);
+  border-bottom: var(--space-px) solid var(--border-light);
+}
+
+.announcement-bar {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: var(--space-2) var(--container-padding);
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  font-weight: var(--font-medium);
+  line-height: var(--leading-snug);
+  letter-spacing: 0.02em;
+  color: var(--text-inverse);
+  background-color: var(--bg-announcement-bar);
+}
+
+.announcement-bar__text {
+  margin: 0;
+  max-width: var(--container-max);
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .announcement-bar {
+    font-size: var(--text-sm);
+    padding-block: var(--space-3);
+  }
+}
+
+.ct-section-inner-wrap {
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+  box-sizing: border-box;
+}
+
+/* Tablet and below: span full header width (no container max cap) */
+@media (max-width: 1023px) {
+  .topbar .ct-section-inner-wrap {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+/* Row 1 — logo + CTA: always one row, left / right */
+.ct-section-inner-wrap > .ct-new-columns:first-of-type {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3) var(--space-4);
+  padding-block: var(--space-4);
+}
+
+.ct-section-inner-wrap > .ct-new-columns:first-of-type .ct-div-block {
+  display: flex;
+  align-items: center;
+}
+
+.ct-section-inner-wrap > .ct-new-columns:first-of-type .ct-div-block:first-child {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.ct-section-inner-wrap > .ct-new-columns:first-of-type .ct-div-block:last-child {
+  flex-shrink: 0;
+  justify-content: flex-end;
+}
+
+.ct-link {
+  text-decoration: none;
+  color: inherit;
+  line-height: 0;
+}
+
+.ct-link:focus-visible {
+  outline: none;
+  box-shadow: var(--shadow-focus);
+  border-radius: var(--radius-sm);
+}
+
+.topbar__cta-link:focus-visible {
+  outline: none;
+  box-shadow: var(--shadow-focus);
+  border-radius: 0;
+}
+
+.ct-image,
+.topbar .ct-image {
+  display: block;
+  height: auto;
+  width: auto;
+  max-width: min(100%, 350px);
+  max-height: none;
+}
+
+@media (min-width: 769px) {
+  .ct-image,
+  .topbar .ct-image {
+    max-width: min(100%, 350px);
+    max-height: none;
+  }
+}
+
+/* Header outline CTA — same vertical rhythm as .btn--md */
+.topbar__cta-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  gap: var(--space-3);
+  box-sizing: border-box;
+  line-height: 1;
+  min-height: 2.5rem;
+  padding: var(--space-3) var(--space-6);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--interactive-button);
+  text-decoration: none;
+  border: var(--space-px) solid var(--interactive-button);
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.topbar__cta-link:hover {
+  color: #000;
+  background-color: var(--bg-tertiary);
+  border-color: var(--interactive-button-hover);
+}
+
+.topbar__cta-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: currentColor;
+  line-height: 0;
+}
+
+/* Homepage: arrow is a direct child of the link (no .topbar__cta-icon wrapper) */
+.topbar__cta-link > .topbar__cta-svg {
+  display: block;
+  flex-shrink: 0;
+  align-self: center;
+  color: currentColor;
+  line-height: 0;
+}
+
+.topbar__cta-svg {
+  display: block;
+  width: 1.125rem;
+  height: 1.125rem;
+  flex-shrink: 0;
+}
+
+.topbar__cta-text {
+  flex: 0 0 auto;
+  text-align: left;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+/* Row 2 — pro menu strip (align with logo column on desktop) */
+.ct-section-inner-wrap > .ct-new-columns:last-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-block: 0 var(--space-3);
+}
+
+@media (min-width: 769px) {
+  .ct-section-inner-wrap > .ct-new-columns:last-of-type {
+    justify-content: flex-start;
+    padding-block: var(--space-3) var(--space-4);
+  }
+}
+
+.oxy-pro-menu {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@media (min-width: 769px) {
+  .oxy-pro-menu {
+    justify-content: flex-start;
+  }
+}
+
+/* Mobile menu open — bars (Oxygen mobile open icon) */
+.oxy-pro-menu-mobile-open-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  margin: 0;
+  padding: 0;
+  border: var(--space-px) solid var(--border-default);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  cursor: pointer;
+  color: var(--text-heading);
+}
+
+.oxy-pro-menu-mobile-open-icon:hover {
+  color: var(--text-link-hover-soft);
+  border-color: var(--border-default);
+}
+
+.oxy-pro-menu-mobile-open-icon:focus-visible {
+  outline: none;
+  box-shadow: var(--shadow-focus);
+}
+
+.topbar__menu-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
+.topbar__menu-icon--close {
+  display: none;
+}
+
+.oxy-pro-menu-mobile-open-icon[aria-expanded="true"] .topbar__menu-icon--bars {
+  display: none;
+}
+
+.oxy-pro-menu-mobile-open-icon[aria-expanded="true"] .topbar__menu-icon--close {
+  display: flex;
+}
+
+@media (min-width: 769px) {
+  .oxy-pro-menu-mobile-open-icon {
+    display: none;
+  }
+}
+
+/* Desktop menu container */
+.oxy-pro-menu-container {
+  display: none;
+  width: 100%;
+}
+
+@media (min-width: 769px) {
+  .oxy-pro-menu-container {
+    display: block;
+  }
+}
+
+.menu-main-container {
+  width: 100%;
+}
+
+.oxy-pro-menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--space-2) var(--space-8);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.oxy-pro-menu-list .menu-item {
+  margin: 0;
+}
+
+.oxy-pro-menu-list a {
+  display: inline-block;
+  font-size: var(--text-nav);
+  font-weight: var(--font-regular);
+  color: rgba(118, 118, 118, 0.8);
+  text-decoration: none;
+  padding-block: var(--space-2);
+  border-bottom: var(--space-px) solid transparent;
+  transition:
+    color var(--duration-normal) var(--ease-in-out),
+    border-color var(--duration-normal) var(--ease-in-out);
+}
+
+.oxy-pro-menu-list a:hover {
+  color: var(--text-link-hover-soft);
+}
+
+.oxy-pro-menu-list a.is-current,
+.oxy-pro-menu-list a[aria-current="page"] {
+  color: #1e2124;
+  text-decoration: none;
+  border-bottom: none;
+  font-weight: var(--font-medium);
+}
+
+/* --------------------------------------------------------------------------
+   Mobile drawer (close control is the header toggle — hamburger ↔ X)
+   -------------------------------------------------------------------------- */
+
+.topbar__drawer {
+  display: none;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  border-top: var(--space-px) solid var(--border-light);
+  background-color: var(--bg-primary);
+  padding: 0;
+}
+
+.topbar__drawer.is-open {
+  display: block;
+}
+
+@media (min-width: 769px) {
+  .topbar__drawer {
+    display: none !important;
+  }
+}
+
+.topbar__drawer .menu-main-container {
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+  padding-inline: var(--container-padding);
+}
+
+.topbar__drawer .oxy-pro-menu-list {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  width: 100%;
+}
+
+.topbar__drawer .oxy-pro-menu-list .menu-item {
+  border-bottom: var(--space-px) solid var(--border-light);
+}
+
+.topbar__drawer .oxy-pro-menu-list a {
+  display: block;
+  padding: var(--space-4) 0;
+}
+
+.topbar__drawer .oxy-pro-menu-list a.is-current,
+.topbar__drawer .oxy-pro-menu-list a[aria-current="page"] {
+  color: #1e2124;
+  text-decoration: none;
+  border-bottom: none;
+  font-weight: var(--font-medium);
+}
+
+.topbar__drawer .menu-item--cta {
+  margin-top: var(--space-3);
+  padding-top: var(--space-4);
+  padding-bottom: var(--space-4);
+  border-bottom: 0;
+}
+
+/* Must beat `.oxy-pro-menu-list a` (higher specificity) so flex + padding apply */
+.topbar__drawer .oxy-pro-menu-list a.topbar__drawer-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  width: 100%;
+  box-sizing: border-box;
+  padding: var(--space-3) var(--space-4);
+  margin: 0;
+  border: var(--space-px) solid var(--interactive-button);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--text-inverse);
+  text-decoration: none;
+  line-height: 1;
+  background-color: var(--interactive-button);
+}
+
+.topbar__drawer .oxy-pro-menu-list a.topbar__drawer-cta .topbar__cta-text {
+  color: inherit;
+  text-align: center;
+  white-space: normal;
+  line-height: var(--leading-snug);
+}
+
+.topbar__drawer .oxy-pro-menu-list a.topbar__drawer-cta .topbar__cta-svg {
+  flex-shrink: 0;
+  align-self: center;
+  color: currentColor;
+}
+
+.topbar__drawer .oxy-pro-menu-list a.topbar__drawer-cta:hover {
+  background-color: var(--interactive-button-hover);
+  border-color: var(--interactive-button-hover);
+  color: var(--text-inverse);
+}
+
+.topbar__drawer .oxy-pro-menu-list a.topbar__drawer-cta:focus-visible {
+  outline: none;
+  box-shadow: var(--shadow-focus);
+}
+
+@media (max-width: 768px) {
+  /* Never show inline dropdown menu on small screens — drawer is the only mobile nav */
+  .topbar .oxy-pro-menu-container {
+    display: none !important;
+  }
+
+  /* Full-viewport-width panel from below sticky header */
+  .topbar__drawer.is-open {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    top: var(--topbar-offset, 0);
+    bottom: 0;
+    z-index: var(--z-topbar-drawer);
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    border-top: 0;
+    box-shadow: var(--shadow-md);
+  }
+
+  .topbar__drawer.is-open .menu-main-container {
+    padding-top: var(--space-2);
+    padding-bottom: env(safe-area-inset-bottom, 0);
+  }
+
+  /* One bar: logo (flex) | hamburger — not two stacked rows */
+  .ct-section-inner-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: var(--space-3);
+  }
+
+  /* Header CTA lives in drawer only */
+  .ct-section-inner-wrap > .ct-new-columns:first-of-type .ct-div-block:last-child {
+    display: none;
+  }
+
+  .ct-section-inner-wrap > .ct-new-columns:first-of-type {
+    flex: 1 1 auto;
+    min-width: 0;
+    justify-content: flex-start;
+    padding-block: var(--space-3);
+    gap: var(--space-2) var(--space-3);
+  }
+
+  .ct-section-inner-wrap > .ct-new-columns:last-of-type {
+    flex: 0 0 auto;
+    width: auto;
+    padding-block: var(--space-3);
+    padding-inline: 0;
+  }
+
+  .ct-section-inner-wrap > .ct-new-columns:last-of-type .ct-div-block {
+    width: auto;
+  }
+
+  .oxy-pro-menu {
+    width: auto;
+    justify-content: flex-end;
+  }
+
+  .topbar .ct-image {
+    max-width: min(100%, 280px);
+    max-height: 2.75rem;
+  }
+
+  .oxy-pro-menu-list {
+    gap: var(--space-2) var(--space-5);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .topbar .oxy-pro-menu-list {
+    gap: var(--space-2) var(--space-5);
+  }
+}
+
+body.topbar-open {
+  overflow: hidden;
+}

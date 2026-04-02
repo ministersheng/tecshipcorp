@@ -1,0 +1,20 @@
+/* ==========================================================================
+   Main stylesheet — TecShipCorp
+   ========================================================================== */
+
+@import url("tokens.css");
+@import url("base.css");
+@import url("components/button.css");
+@import url("components/input.css");
+@import url("components/label.css");
+@import url("components/topbar.css");
+@import url("components/footer.css");
+@import url("pages/home.css");
+@import url("pages/contact.css");
+@import url("pages/projects.css");
+@import url("pages/solutions.css");
+@import url("pages/capabilities.css");
+@import url("pages/about.css");
+@import url("pages/policy.css");
+@import url("pages/keris-strike.css");
+@import url("pages/trans-pacific.css");

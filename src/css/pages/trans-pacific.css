@@ -1,0 +1,131 @@
+/* ==========================================================================
+   Trans-Pacific Procurement project page
+   ========================================================================== */
+
+.tpp-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .tpp-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.tpp-gallery__item {
+  aspect-ratio: 4 / 3;
+  background-color: var(--bg-tertiary);
+  border: var(--space-px) dashed var(--border-default);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+}
+
+.tpp-gallery__caption {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.tpp-blocks {
+  display: grid;
+  gap: var(--space-8);
+}
+
+@media (min-width: 768px) {
+  .tpp-blocks {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.tpp-block {
+  padding: var(--space-6);
+  border: var(--space-px) solid var(--border-light);
+  background-color: var(--bg-primary);
+}
+
+.tpp-block__title {
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-4);
+}
+
+.tpp-block__list {
+  list-style: none;
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+  color: var(--text-primary);
+}
+
+.tpp-block__list li {
+  margin-bottom: var(--space-3);
+  padding-left: var(--space-4);
+  position: relative;
+}
+
+.tpp-block__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: var(--space-1);
+  height: var(--space-1);
+  background-color: var(--interactive-primary);
+  border-radius: var(--radius-full);
+}
+
+.tpp-stats-section {
+  background-color: var(--bg-inverse);
+  color: var(--text-inverse);
+}
+
+.tpp-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+  padding-block: var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .tpp-stats {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.tpp-stat {
+  text-align: center;
+  padding-inline: var(--space-4);
+}
+
+.tpp-stat__value {
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  font-weight: var(--font-bold);
+  color: var(--text-inverse);
+}
+
+.tpp-stat__label {
+  font-size: var(--text-sm);
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: var(--space-2);
+}
+
+.tpp-cta {
+  text-align: center;
+  padding-block: var(--space-12);
+}
+
+.tpp-cta__title {
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-4);
+}
+
+.tpp-cta__body {
+  font-size: var(--text-body);
+  color: var(--text-primary);
+  margin-bottom: var(--space-6);
+  max-width: 36rem;
+  margin-inline: auto;
+}

@@ -1,0 +1,73 @@
+You are building a pure HTML/CSS static site for Smart Nation Supply LLC.
+
+## Project Context
+- Type: Static marketing/business site
+- Industry: Supply company
+- Migration: From WordPress (Forminator forms)
+- Hosting: Cloudflare Pages
+- Forms: Formspree
+
+## Tech Stack
+- Pure HTML (no templating engine)
+- CSS with custom property tokens
+- Vanilla JS only when absolutely necessary
+- No build step, no dependencies
+
+## Design System
+- Font: Lato (Google Fonts)
+- Primary: #153E68 (navy blue)
+- Font size: text body 18px line height 25px; fontweight 400 color #666666
+- Background: #FFFFFF (white)
+- Max width: 1400px
+- Breakpoints: 1024px / 768px / 640px
+- Spacing: 4px base unit
+- Atomic layers: tokens → atoms → molecules → organisms → sections → pages
+
+## File References
+- Tokens: @_ai-context/TOKENS.md
+- Components: @_ai-context/COMPONENTS.md
+- Patterns: @_ai-context/PATTERNS.md
+- Banned: @_ai-context/DO-NOT.md
+
+## ALWAYS
+- Use CSS variables from src/css/tokens.css — never hardcode hex or px
+- Use BEM class naming: .block__element--modifier
+- Reference existing components from @_ai-context/COMPONENTS.md before writing new ones
+- Mobile-first: base styles are mobile, add min-width media queries for larger
+- Include focus states on all interactive elements
+- Output only the files specified in the task
+- One component per task
+
+## NEVER
+- Inline styles in HTML
+- !important in CSS
+- New utility classes outside the token system
+- Hardcoded colors (use var(--token))
+- Hardcoded spacing (use var(--space-n))
+- px for font sizes (use rem)
+- Emoji anywhere
+- Never mention wording related to bidding sam.gov, we dont want people to know we bid from us gov more like gov gave contract direct to us
+- Superlatives: "best", "greatest", "unmatched", "revolutionary", "cutting-edge"
+- Placeholder text like "Lorem ipsum" or "Hello World"
+- Touch files outside the scope of the current task
+- Bundle multiple components in one response
+- Create new components without explicit approval
+- JavaScript for things CSS can handle
+
+## CSS Specificity Rules
+- Maximum: one class selector
+- Allowed: .btn, .btn__icon, .btn--primary, .btn.is-loading
+- Banned: .header .nav .btn, #main-button, button.btn
+
+## Spacing Scale (only these values)
+--space-1: 4px    --space-6: 24px    --space-16: 64px
+--space-2: 8px    --space-8: 32px    --space-20: 80px
+--space-3: 12px   --space-10: 40px   --space-24: 96px
+--space-4: 16px   --space-12: 48px
+
+## When Given a Task
+1. Read @_ai-context/SYSTEM.md for full context
+2. Check @_ai-context/COMPONENTS.md for existing components
+3. Reference @_ai-context/TOKENS.md for all values
+4. Verify against @_ai-context/DO-NOT.md before outputting
+5. Output only what was requested

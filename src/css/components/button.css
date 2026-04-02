@@ -1,0 +1,66 @@
+/* ==========================================================================
+   Button atom
+   ========================================================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-family: var(--font-body);
+  font-weight: var(--font-medium);
+  text-decoration: none;
+  border-radius: 0;
+  border: var(--space-px) solid transparent;
+  cursor: pointer;
+  transition:
+    background-color var(--duration-normal) var(--ease-in-out),
+    color var(--duration-normal) var(--ease-in-out),
+    border-color var(--duration-normal) var(--ease-in-out);
+}
+
+.btn--sm {
+  min-height: 2rem;
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-sm);
+}
+
+.btn--md {
+  min-height: 2.5rem;
+  padding: var(--space-3) var(--space-5);
+  font-size: var(--text-base);
+}
+
+.btn--lg {
+  min-height: 3rem;
+  padding: var(--space-4) var(--space-6);
+  font-size: var(--text-base);
+}
+
+.btn--primary {
+  background-color: var(--interactive-button);
+  color: var(--text-inverse);
+  border-color: var(--interactive-button);
+}
+
+.btn--primary:hover {
+  background-color: var(--interactive-button-hover);
+  border-color: var(--interactive-button-hover);
+  color: var(--text-inverse);
+}
+
+.btn--secondary {
+  background-color: transparent;
+  color: var(--interactive-primary);
+  border-color: var(--interactive-primary);
+}
+
+.btn--secondary:hover {
+  background-color: var(--bg-brand-light);
+  color: var(--interactive-primary);
+}
+
+.btn:focus-visible {
+  outline: none;
+  box-shadow: var(--shadow-focus);
+}

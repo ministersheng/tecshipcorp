@@ -1,0 +1,149 @@
+/* ==========================================================================
+   Design tokens — TecShipCorp
+   ========================================================================== */
+
+:root {
+  /* Primitives */
+  --color-white: #ffffff;
+  --color-gray-50: #f8f9fa;
+  --color-gray-100: #f1f3f5;
+  --color-gray-200: #e9ecef;
+  --color-gray-300: #dee2e6;
+  --color-gray-400: #ced4da;
+  --color-gray-500: #adb5bd;
+  --color-gray-600: #6c757d;
+  --color-gray-700: #495057;
+  --color-gray-800: #343a40;
+  --color-gray-900: #212529;
+  --color-black: #000000;
+
+  --color-brand-primary: #1a4fa0;
+  --color-brand-primary-light: #e6f1fb;
+  --color-brand-dark: #0d1b2a;
+  --color-body-text: #666666;
+  --color-button: #262626;
+  --color-announcement-bar: #1e2124;
+
+  --color-success: #22c55e;
+  --color-error: #ef4444;
+
+  /* Semantic */
+  --text-primary: var(--color-body-text);
+  --text-heading: var(--color-button);
+  --text-secondary: #888888;
+  --text-muted: #999999;
+  --text-inverse: var(--color-white);
+  --text-link: var(--color-brand-primary);
+  --text-link-hover: #145090;
+  --text-link-hover-soft: #a0a0a0;
+  --text-accent-dark: #282828;
+  --color-text-eyebrow: #515151;
+  --text-eyebrow: 0.625rem;
+  /* Slightly larger eyebrow / h4 labels from md breakpoint up */
+  --text-eyebrow-lg: 0.75rem;
+  --letter-hero-tight: 0.05625rem;
+  --hero-title-size: 4.6875rem;
+  --hero-title-width: 40rem;
+  --hero-title-min-height: 23.125rem;
+  --link-underline-pad: 0.9375rem;
+
+  --bg-primary: var(--color-white);
+  --bg-secondary: var(--color-gray-50);
+  --bg-tertiary: var(--color-gray-100);
+  --bg-inverse: var(--color-brand-dark);
+  --bg-announcement-bar: var(--color-announcement-bar);
+  --bg-brand-light: var(--color-brand-primary-light);
+  --bg-peach: #fde5d2;
+  --text-peach-heading: #333333;
+  --text-peach-link: #1b3022;
+
+  --border-default: var(--color-gray-300);
+  --border-light: var(--color-gray-200);
+  --border-dark: #1e2124;
+  --border-focus: var(--color-brand-primary);
+
+  --interactive-primary: var(--color-brand-primary);
+  --interactive-primary-hover: #145090;
+  --interactive-button: var(--color-button);
+  --interactive-button-hover: #3a3a3a;
+
+  /* Typography */
+  --font-heading: "Lato", system-ui, -apple-system, sans-serif;
+  --font-body: "Lato", system-ui, -apple-system, sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-nav: 0.9375rem;
+  --text-base: 1rem;
+  /* Body copy: 18px / 25px / 400 / #666 — brand spec */
+  --text-body: 1.125rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+
+  --leading-none: 1;
+  --leading-tight: 1.25;
+  --leading-snug: 1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+  /* 25px line height at default 16px root (pairs with 18px body) */
+  --leading-body: 1.5625rem;
+
+  /* Spacing (4px base) */
+  --space-px: 1px;
+  --space-0: 0;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* Layout */
+  /* Sitewide content max width */
+  --container-max: 87.5rem;
+  --container-padding: var(--space-4);
+  --radius-sm: 4px;
+  --radius-md: 8px;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.08);
+  --shadow-focus: 0 0 0 3px rgba(26, 79, 160, 0.35);
+
+  --duration-fast: 100ms;
+  --duration-normal: 200ms;
+  --duration-slow: 300ms;
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --z-sticky: 200;
+  /* Slide-out panel sits under sticky .topbar (below announcement + bar) */
+  --z-topbar-drawer: 150;
+  --z-overlay: 300;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --container-padding: var(--space-6);
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --container-padding: var(--space-8);
+  }
+}

@@ -1,0 +1,31 @@
+/* ==========================================================================
+   Policy page
+   ========================================================================== */
+
+.policy-prose {
+  max-width: 42rem;
+}
+
+.policy-prose h2 {
+  font-size: var(--text-lg);
+  margin-top: var(--space-10);
+  margin-bottom: var(--space-4);
+}
+
+.policy-prose p,
+.policy-prose li {
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--text-primary);
+  margin-bottom: var(--space-4);
+}
+
+.policy-prose ul {
+  list-style: disc;
+  padding-left: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
+.policy-prose li {
+  margin-bottom: var(--space-2);
+}
