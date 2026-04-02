@@ -308,5 +308,6 @@
 
   #new_columns-510-697 {
     grid-template-columns: 1fr;
+    gap: 0;
   }
 }
