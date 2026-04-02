@@ -2,6 +2,40 @@
    Homepage
    ========================================================================== */
 
+.home-page {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
+    url("../../../public/images/brand/tecship-gradient-background-blackhole-1400p.webp");
+  background-size: auto, cover;
+  background-attachment: scroll;
+  background-position: center top;
+  text-align: left;
+}
+
+.home-page main,
+.home-page .home-hero,
+.home-page .home-gov,
+.home-page .home-core,
+.home-page .home-gallery,
+.home-page .sns-home,
+.home-page .home-peach-panel,
+.home-page .home-marquee,
+.home-page .tecship-credentials-section {
+  background: none;
+  background-color: transparent;
+}
+
+.home-page .sns-home--proof::before {
+  display: none;
+}
+
+.home-page .home-core .sns-card,
+.home-page .sns-home--proof .sns-card--proof,
+.home-page .home-peach-panel__inner {
+  background: none;
+  background-color: transparent;
+}
+
 .home-hero {
   position: relative;
   background-color: var(--bg-primary);
@@ -316,6 +350,119 @@
   margin: 0;
 }
 
+.tecship-inner {
+  max-width: var(--container-max);
+}
+
+.tecship-kicker {
+  margin-bottom: var(--space-3);
+  font-family: var(--font-heading);
+  font-size: var(--text-xs);
+  font-weight: var(--font-bold);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.tecship-title {
+  margin: 0 0 var(--space-8);
+  max-width: 34rem;
+  font-size: var(--text-2xl);
+  line-height: var(--leading-tight);
+  color: var(--color-black);
+}
+
+@media (min-width: 768px) {
+  .tecship-title {
+    font-size: var(--text-3xl);
+  }
+}
+
+.tecship-credentials-section {
+  border-top: var(--space-px) solid var(--border-light);
+  border-bottom: var(--space-px) solid var(--border-light);
+  background:
+    linear-gradient(180deg, rgba(248, 246, 241, 0.92) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.tecship-split {
+  display: grid;
+  gap: var(--space-6);
+  align-items: start;
+  margin-top: var(--space-5);
+  margin-bottom: var(--space-8);
+}
+
+@media (min-width: 900px) {
+  .tecship-split {
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    gap: var(--space-10);
+  }
+}
+
+.tecship-title-large {
+  font-size: 38px;
+  line-height: 42px;
+  letter-spacing: 0.4px;
+  font-weight: 400;
+  max-width: 22rem;
+  margin-bottom: 0;
+}
+
+.tecship-copy {
+  margin: 0;
+  max-width: 38rem;
+  font-size: var(--text-body);
+  line-height: var(--leading-relaxed);
+  color: var(--text-primary);
+}
+
+.tecship-cards-2 {
+  display: grid;
+  gap: var(--space-5);
+  grid-template-columns: 1fr;
+  margin-top: var(--space-7);
+}
+
+@media (min-width: 900px) {
+  .tecship-cards-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.tecship-card {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  padding: var(--space-6);
+  border: 1px solid var(--ts-line, rgba(26, 29, 33, 0.12));
+  background: linear-gradient(180deg, #fafafa 0%, #f1f1f1 100%);
+  box-shadow: 0 14px 32px rgba(13, 27, 42, 0.06);
+}
+
+.tecship-card h3 {
+  margin: 0 0 var(--space-3);
+  font-size: var(--text-xl);
+  line-height: var(--leading-tight);
+  color: var(--color-black);
+}
+
+.tecship-card p {
+  margin: 0;
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--text-primary);
+}
+
+.tecship-meta-label {
+  margin-bottom: var(--space-3);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
 .home-gallery__grid {
   display: grid;
   gap: var(--space-2);
@@ -351,17 +498,21 @@
   transform: scale(1.03);
 }
 
-/* Field documentation strip: BLS capability WebPs are portrait (~2501×3334–3335 per file scan). */
-.home-gallery .keris-gallery__img {
+/* Field documentation strip: BLS capability WebPs are portrait (~2501Ã—3334â€“3335 per file scan). */
+.home-gallery .case-study-gallery__img {
   aspect-ratio: 2501 / 3335;
+  display: block;
+  border-radius: 0;
 }
 
-.home-gallery .keris-gallery__item {
+.home-gallery .case-study-gallery__item {
   flex: 0 0 min(15rem, 76vw);
+  overflow: hidden;
+  border-radius: var(--radius-sm);
 }
 
 @media (min-width: 768px) {
-  .home-gallery .keris-gallery__item {
+  .home-gallery .case-study-gallery__item {
     flex-basis: 16.25rem;
   }
 }
@@ -392,7 +543,7 @@
   }
 }
 
-/* —— Field proof / case block (tactical, low-noise) —— */
+/* â€”â€” Field proof / case block (tactical, low-noise) â€”â€” */
 .sns-home--proof {
   --sns-proof-ink: #1a1d21;
   --sns-proof-steel: #4a5563;
@@ -521,7 +672,7 @@
   color: var(--sns-proof-steel);
 }
 
-/* Telemetry-style figures — wide viewports only (IBM Plex Mono: clean vs stencil) */
+/* Telemetry-style figures â€” wide viewports only (IBM Plex Mono: clean vs stencil) */
 @media (min-width: 700px) {
   .sns-home--proof .sns-stat-number {
     font-family: "IBM Plex Mono", ui-monospace, monospace;

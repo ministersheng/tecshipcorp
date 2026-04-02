@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Design tokens — TecShipCorp
+   Design tokens — Tecship Corp
    ========================================================================== */
 
 :root {
@@ -44,7 +44,7 @@
   --letter-hero-tight: 0.05625rem;
   --hero-title-size: 4.6875rem;
   --hero-title-width: 40rem;
-  --hero-title-min-height: 23.125rem;
+  --hero-title-min-height: 18rem;
   --link-underline-pad: 0.9375rem;
 
   --bg-primary: var(--color-white);

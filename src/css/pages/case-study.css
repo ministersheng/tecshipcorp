@@ -1,22 +1,22 @@
 /* ==========================================================================
-   Keris Strike 2025 case study
+   Shared case study styles
    ========================================================================== */
 
-.keris-hero {
+.case-study-hero {
   background-color: var(--bg-inverse);
   color: var(--text-inverse);
   padding-block: var(--space-12) var(--space-10);
 }
 
-.slide-page .keris-hero {
+.slide-page .case-study-hero {
   background-color: #4b74b5;
 }
 
-.cloudora-page .keris-hero {
+.cloudora-page .case-study-hero {
   background-color: #240d79;
 }
 
-.keris-hero__kicker {
+.case-study-hero__kicker {
   font-family: var(--font-body);
   font-size: var(--text-eyebrow);
   font-weight: var(--font-light);
@@ -27,23 +27,23 @@
 }
 
 @media (min-width: 768px) {
-  .keris-hero__kicker {
+  .case-study-hero__kicker {
     font-size: var(--text-eyebrow-lg);
   }
 }
 
-.keris-hero__title {
+.case-study-hero__title {
   font-size: 90px;
   color: var(--text-inverse);
   margin-bottom: var(--space-4);
 }
 
-.keris-hero__title .typing-effect-once {
+.case-study-hero__title .typing-effect-once {
   display: inline-block;
   min-width: 0;
 }
 
-.keris-hero__subtitle {
+.case-study-hero__subtitle {
   font-size: var(--text-lg);
   line-height: var(--leading-relaxed);
   color: rgba(255, 255, 255, 0.85);
@@ -51,7 +51,7 @@
   margin-bottom: var(--space-8);
 }
 
-.keris-stats {
+.case-study-stats {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0;
@@ -61,40 +61,40 @@
 }
 
 @media (min-width: 768px) {
-  .keris-stats {
+  .case-study-stats {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-.keris-stat {
+.case-study-stat {
   padding: var(--space-4) var(--space-5);
   border-right: var(--space-px) solid rgba(255, 255, 255, 0.22);
   border-bottom: var(--space-px) solid rgba(255, 255, 255, 0.22);
 }
 
-.keris-stat:nth-child(2n) {
+.case-study-stat:nth-child(2n) {
   border-right: none;
 }
 
-.keris-stat:nth-child(n + 3) {
+.case-study-stat:nth-child(n + 3) {
   border-bottom: none;
 }
 
 @media (min-width: 768px) {
-  .keris-stat {
+  .case-study-stat {
     border-bottom: none;
   }
 
-  .keris-stat:nth-child(2n) {
+  .case-study-stat:nth-child(2n) {
     border-right: var(--space-px) solid rgba(255, 255, 255, 0.22);
   }
 
-  .keris-stat:nth-child(4n) {
+  .case-study-stat:nth-child(4n) {
     border-right: none;
   }
 }
 
-.keris-stat__value {
+.case-study-stat__value {
   font-family: var(--font-heading);
   font-size: var(--text-3xl);
   font-weight: var(--font-bold);
@@ -102,38 +102,38 @@
   line-height: var(--leading-none);
 }
 
-.keris-stat__label {
+.case-study-stat__label {
   font-family: "IBM Plex Mono", ui-monospace, monospace;
   font-size: var(--text-sm);
   color: rgba(255, 255, 255, 0.7);
   margin-top: var(--space-2);
 }
 
-.keris-pills {
+.case-study-pills {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-3);
 }
 
-.keris-pill {
+.case-study-pill {
   font-size: var(--text-sm);
   padding: var(--space-2) var(--space-4);
   border: var(--space-px) solid rgba(255, 255, 255, 0.35);
   color: rgba(255, 255, 255, 0.9);
 }
 
-.keris-gallery__heading {
+.case-study-gallery__heading {
   margin-bottom: var(--space-8);
 }
 
-.keris-gallery__controls {
+.case-study-gallery__controls {
   display: flex;
   justify-content: flex-end;
   gap: var(--space-2);
   margin-bottom: var(--space-3);
 }
 
-.keris-gallery__arrow {
+.case-study-gallery__arrow {
   width: 2rem;
   height: 2rem;
   border: var(--space-px) solid #1e2124;
@@ -151,12 +151,12 @@
     color var(--duration-normal) var(--ease-in-out);
 }
 
-.keris-gallery__arrow:hover:not(:disabled) {
+.case-study-gallery__arrow:hover:not(:disabled) {
   background-color: #303337;
   border-color: #303337;
 }
 
-.keris-gallery__arrow:disabled {
+.case-study-gallery__arrow:disabled {
   background-color: #6b7280;
   border-color: #6b7280;
   color: rgba(255, 255, 255, 0.78);
@@ -164,13 +164,13 @@
   cursor: default;
 }
 
-.keris-section--muted {
+.case-study-section--muted {
   background-color: var(--bg-primary);
 }
 
-/* Scope of work — section kicker matches .ks-support__label; title uses .sns-title (home.css) */
+/* Scope of work â€” section kicker matches .ks-support__label; title uses .sns-title (home.css) */
 
-.keris-scope__body {
+.case-study-scope__body {
   font-family: var(--font-body);
   font-size: var(--text-eyebrow);
   font-weight: var(--font-regular);
@@ -181,48 +181,48 @@
 }
 
 @media (min-width: 768px) {
-  .keris-scope__body {
+  .case-study-scope__body {
     font-size: var(--text-eyebrow-lg);
   }
 }
 
-.keris-scope-intro {
+.case-study-scope-intro {
   margin-bottom: var(--space-8);
   max-width: 40rem;
 }
 
-.keris-scope-section .ks-loc__name {
+.case-study-scope-section .ks-loc__name {
   color: #3a3a3a;
 }
 
-.keris-scope-section .keris-loc-card__services {
+.case-study-scope-section .case-study-loc-card__services {
   color: #3a3a3a;
 }
 
-.keris-contract-intro {
+.case-study-contract-intro {
   margin-bottom: var(--space-4);
   max-width: 40rem;
 }
 
-.keris-contract-body {
+.case-study-contract-body {
   margin-bottom: var(--space-8);
   max-width: 48rem;
 }
 
-.keris-lang-body {
+.case-study-lang-body {
   max-width: 48rem;
 }
 
-.keris-coords-intro {
+.case-study-coords-intro {
   max-width: 40rem;
   margin-bottom: var(--space-4);
 }
 
-.keris-coords-list {
+.case-study-coords-list {
   max-width: 36rem;
 }
 
-.keris-gallery {
+.case-study-gallery {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -243,21 +243,21 @@
   outline: none;
 }
 
-.keris-gallery:focus-visible {
+.case-study-gallery:focus-visible {
   box-shadow: var(--shadow-focus);
   border-radius: var(--radius-sm);
 }
 
-.keris-gallery::-webkit-scrollbar {
+.case-study-gallery::-webkit-scrollbar {
   height: 6px;
 }
 
-.keris-gallery::-webkit-scrollbar-thumb {
+.case-study-gallery::-webkit-scrollbar-thumb {
   background-color: var(--border-default);
   border-radius: 3px;
 }
 
-.keris-gallery__item {
+.case-study-gallery__item {
   position: relative;
   flex: 0 0 min(17.5rem, 82vw);
   scroll-snap-align: start;
@@ -269,12 +269,12 @@
 }
 
 @media (min-width: 768px) {
-  .keris-gallery__item {
+  .case-study-gallery__item {
     flex-basis: 18.75rem;
   }
 }
 
-.keris-gallery__img {
+.case-study-gallery__img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
@@ -283,7 +283,7 @@
   border: var(--space-px) solid var(--border-light);
 }
 
-.keris-gallery__caption {
+.case-study-gallery__caption {
   position: absolute;
   left: 0;
   right: 0;
@@ -298,44 +298,44 @@
   background: linear-gradient(to top, rgba(26, 29, 33, 0.82), rgba(26, 29, 33, 0));
 }
 
-.keris-split {
+.case-study-split {
   display: grid;
   gap: var(--space-10);
 }
 
 @media (min-width: 1024px) {
-  .keris-split {
+  .case-study-split {
     grid-template-columns: 1.8fr 1fr;
     align-items: start;
   }
 }
 
-/* Section h3 headlines — one step smaller than global .solution-block__title / .sns-title */
-.keris-split .solution-block__title {
+/* Section h3 headlines â€” one step smaller than global .solution-block__title / .sns-title */
+.case-study-split .solution-block__title {
   font-size: var(--text-xl);
 }
 
 @media (min-width: 768px) {
-  .keris-split .solution-block__title {
+  .case-study-split .solution-block__title {
     font-size: var(--text-2xl);
   }
 }
 
-.keris-scope-section .sns-title {
+.case-study-scope-section .sns-title {
   font-size: var(--text-xl);
 }
 
 @media (min-width: 768px) {
-  .keris-scope-section .sns-title {
+  .case-study-scope-section .sns-title {
     font-size: var(--text-2xl);
   }
 }
 
-.keris-sidebar {
+.case-study-sidebar {
   background-color: var(--bg-primary);
 }
 
-.keris-sidebar__title {
+.case-study-sidebar__title {
   font-family: var(--font-body);
   font-size: 0.6875rem;
   font-weight: 600;
@@ -347,7 +347,7 @@
   margin-bottom: var(--space-4);
 }
 
-.keris-sidebar__row {
+.case-study-sidebar__row {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: var(--space-2);
@@ -355,7 +355,7 @@
   border-bottom: var(--space-px) solid var(--border-light);
 }
 
-.keris-sidebar__row dt {
+.case-study-sidebar__row dt {
   font-family: "IBM Plex Mono", ui-monospace, monospace;
   font-size: 0.6875rem;
   font-weight: 600;
@@ -364,7 +364,7 @@
   color: var(--text-muted);
 }
 
-.keris-sidebar__row dd {
+.case-study-sidebar__row dd {
   font-family: var(--font-heading);
   font-size: var(--text-base);
   font-weight: var(--font-bold);
@@ -372,65 +372,65 @@
   color: var(--text-primary);
 }
 
-.keris-locations {
+.case-study-locations {
   display: grid;
   gap: 0;
 }
 
 @media (min-width: 768px) {
-  .keris-locations,
+  .case-study-locations,
   .ks-locations {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 1024px) {
-  .keris-locations,
+  .case-study-locations,
   .ks-locations {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-.keris-loc-card {
+.case-study-loc-card {
   border: var(--space-px) solid var(--border-light);
   padding: var(--space-6);
   background-color: var(--bg-primary);
   transition: background-color var(--duration-normal) var(--ease-in-out);
 }
 
-.keris-loc-card:hover {
+.case-study-loc-card:hover {
   background-color: var(--bg-announcement-bar);
 }
 
-.keris-loc-card:hover .ks-loc__name,
-.keris-loc-card:hover .keris-loc-card__meta,
-.keris-loc-card:hover .keris-loc-card__services {
+.case-study-loc-card:hover .ks-loc__name,
+.case-study-loc-card:hover .case-study-loc-card__meta,
+.case-study-loc-card:hover .case-study-loc-card__services {
   color: rgba(255, 255, 255, 0.9);
 }
 
-.keris-loc-card:hover .ks-loc__top {
+.case-study-loc-card:hover .ks-loc__top {
   border-bottom-color: rgba(255, 255, 255, 0.25);
 }
 
-.keris-loc-card:hover .ks-loc__clins {
+.case-study-loc-card:hover .ks-loc__clins {
   background-color: rgba(255, 255, 255, 0.14);
   color: #f3f3f3;
 }
 
 /* Scope location deck: first card is "selected" on load; hover another to swap */
-.keris-scope-section .keris-locations--deck > .keris-loc-card {
+.case-study-scope-section .case-study-locations--deck > .case-study-loc-card {
   position: relative;
   overflow: hidden;
 }
 
-.keris-scope-section .keris-locations--deck .keris-loc-card__media {
+.case-study-scope-section .case-study-locations--deck .case-study-loc-card__media {
   position: absolute;
   inset: 0;
   z-index: 0;
   pointer-events: none;
 }
 
-.keris-scope-section .keris-locations--deck .keris-loc-card__img {
+.case-study-scope-section .case-study-locations--deck .case-study-loc-card__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -439,129 +439,129 @@
   transition: opacity var(--duration-slow) var(--ease-out), transform 6s var(--ease-out);
 }
 
-.keris-scope-section
-  .keris-locations--deck:not(:has(.keris-loc-card:hover:not(:first-child)))
-  > .keris-loc-card:first-child,
-.keris-scope-section
-  .keris-locations--deck:has(.keris-loc-card:hover:not(:first-child))
-  > .keris-loc-card:hover {
+.case-study-scope-section
+  .case-study-locations--deck:not(:has(.case-study-loc-card:hover:not(:first-child)))
+  > .case-study-loc-card:first-child,
+.case-study-scope-section
+  .case-study-locations--deck:has(.case-study-loc-card:hover:not(:first-child))
+  > .case-study-loc-card:hover {
   background-color: rgba(30, 33, 36, 0.97);
   border-color: rgba(255, 255, 255, 0.12);
 }
 
-/* First row stays visually “locked” when it’s the selected tile (no lighter hover) */
-.keris-scope-section
-  .keris-locations--deck:not(:has(.keris-loc-card:hover:not(:first-child)))
-  > .keris-loc-card:first-child:hover {
+/* First row stays visually â€œlockedâ€ when itâ€™s the selected tile (no lighter hover) */
+.case-study-scope-section
+  .case-study-locations--deck:not(:has(.case-study-loc-card:hover:not(:first-child)))
+  > .case-study-loc-card:first-child:hover {
   background-color: rgba(30, 33, 36, 0.97);
 }
 
-.keris-scope-section
-  .keris-locations--deck:not(:has(.keris-loc-card:hover:not(:first-child)))
-  > .keris-loc-card:first-child .keris-loc-card__img,
-.keris-scope-section
-  .keris-locations--deck:has(.keris-loc-card:hover:not(:first-child))
-  > .keris-loc-card:hover .keris-loc-card__img {
+.case-study-scope-section
+  .case-study-locations--deck:not(:has(.case-study-loc-card:hover:not(:first-child)))
+  > .case-study-loc-card:first-child .case-study-loc-card__img,
+.case-study-scope-section
+  .case-study-locations--deck:has(.case-study-loc-card:hover:not(:first-child))
+  > .case-study-loc-card:hover .case-study-loc-card__img {
   opacity: 0.06;
 }
 
-.keris-scope-section
-  .keris-locations--deck:not(:has(.keris-loc-card:hover:not(:first-child)))
-  > .keris-loc-card:first-child .ks-loc__top,
-.keris-scope-section
-  .keris-locations--deck:not(:has(.keris-loc-card:hover:not(:first-child)))
-  > .keris-loc-card:first-child .keris-loc-card__meta,
-.keris-scope-section
-  .keris-locations--deck:not(:has(.keris-loc-card:hover:not(:first-child)))
-  > .keris-loc-card:first-child .keris-loc-card__services,
-.keris-scope-section
-  .keris-locations--deck:has(.keris-loc-card:hover:not(:first-child))
-  > .keris-loc-card:hover .ks-loc__top,
-.keris-scope-section
-  .keris-locations--deck:has(.keris-loc-card:hover:not(:first-child))
-  > .keris-loc-card:hover .keris-loc-card__meta,
-.keris-scope-section
-  .keris-locations--deck:has(.keris-loc-card:hover:not(:first-child))
-  > .keris-loc-card:hover .keris-loc-card__services {
+.case-study-scope-section
+  .case-study-locations--deck:not(:has(.case-study-loc-card:hover:not(:first-child)))
+  > .case-study-loc-card:first-child .ks-loc__top,
+.case-study-scope-section
+  .case-study-locations--deck:not(:has(.case-study-loc-card:hover:not(:first-child)))
+  > .case-study-loc-card:first-child .case-study-loc-card__meta,
+.case-study-scope-section
+  .case-study-locations--deck:not(:has(.case-study-loc-card:hover:not(:first-child)))
+  > .case-study-loc-card:first-child .case-study-loc-card__services,
+.case-study-scope-section
+  .case-study-locations--deck:has(.case-study-loc-card:hover:not(:first-child))
+  > .case-study-loc-card:hover .ks-loc__top,
+.case-study-scope-section
+  .case-study-locations--deck:has(.case-study-loc-card:hover:not(:first-child))
+  > .case-study-loc-card:hover .case-study-loc-card__meta,
+.case-study-scope-section
+  .case-study-locations--deck:has(.case-study-loc-card:hover:not(:first-child))
+  > .case-study-loc-card:hover .case-study-loc-card__services {
   position: relative;
   z-index: 1;
 }
 
-.keris-scope-section
-  .keris-locations--deck:not(:has(.keris-loc-card:hover:not(:first-child)))
-  > .keris-loc-card:first-child .ks-loc__name,
-.keris-scope-section
-  .keris-locations--deck:not(:has(.keris-loc-card:hover:not(:first-child)))
-  > .keris-loc-card:first-child .keris-loc-card__meta,
-.keris-scope-section
-  .keris-locations--deck:not(:has(.keris-loc-card:hover:not(:first-child)))
-  > .keris-loc-card:first-child .keris-loc-card__services,
-.keris-scope-section
-  .keris-locations--deck:has(.keris-loc-card:hover:not(:first-child))
-  > .keris-loc-card:hover .ks-loc__name,
-.keris-scope-section
-  .keris-locations--deck:has(.keris-loc-card:hover:not(:first-child))
-  > .keris-loc-card:hover .keris-loc-card__meta,
-.keris-scope-section
-  .keris-locations--deck:has(.keris-loc-card:hover:not(:first-child))
-  > .keris-loc-card:hover .keris-loc-card__services {
+.case-study-scope-section
+  .case-study-locations--deck:not(:has(.case-study-loc-card:hover:not(:first-child)))
+  > .case-study-loc-card:first-child .ks-loc__name,
+.case-study-scope-section
+  .case-study-locations--deck:not(:has(.case-study-loc-card:hover:not(:first-child)))
+  > .case-study-loc-card:first-child .case-study-loc-card__meta,
+.case-study-scope-section
+  .case-study-locations--deck:not(:has(.case-study-loc-card:hover:not(:first-child)))
+  > .case-study-loc-card:first-child .case-study-loc-card__services,
+.case-study-scope-section
+  .case-study-locations--deck:has(.case-study-loc-card:hover:not(:first-child))
+  > .case-study-loc-card:hover .ks-loc__name,
+.case-study-scope-section
+  .case-study-locations--deck:has(.case-study-loc-card:hover:not(:first-child))
+  > .case-study-loc-card:hover .case-study-loc-card__meta,
+.case-study-scope-section
+  .case-study-locations--deck:has(.case-study-loc-card:hover:not(:first-child))
+  > .case-study-loc-card:hover .case-study-loc-card__services {
   color: rgba(255, 255, 255, 0.92);
 }
 
-.keris-scope-section
-  .keris-locations--deck:not(:has(.keris-loc-card:hover:not(:first-child)))
-  > .keris-loc-card:first-child .ks-loc__top,
-.keris-scope-section
-  .keris-locations--deck:has(.keris-loc-card:hover:not(:first-child))
-  > .keris-loc-card:hover .ks-loc__top {
+.case-study-scope-section
+  .case-study-locations--deck:not(:has(.case-study-loc-card:hover:not(:first-child)))
+  > .case-study-loc-card:first-child .ks-loc__top,
+.case-study-scope-section
+  .case-study-locations--deck:has(.case-study-loc-card:hover:not(:first-child))
+  > .case-study-loc-card:hover .ks-loc__top {
   border-bottom-color: rgba(255, 255, 255, 0.22);
 }
 
-.keris-scope-section
-  .keris-locations--deck:not(:has(.keris-loc-card:hover:not(:first-child)))
-  > .keris-loc-card:first-child .ks-loc__clins,
-.keris-scope-section
-  .keris-locations--deck:has(.keris-loc-card:hover:not(:first-child))
-  > .keris-loc-card:hover .ks-loc__clins {
+.case-study-scope-section
+  .case-study-locations--deck:not(:has(.case-study-loc-card:hover:not(:first-child)))
+  > .case-study-loc-card:first-child .ks-loc__clins,
+.case-study-scope-section
+  .case-study-locations--deck:has(.case-study-loc-card:hover:not(:first-child))
+  > .case-study-loc-card:hover .ks-loc__clins {
   background-color: rgba(255, 255, 255, 0.14);
   color: #f3f3f3;
 }
 
-.keris-scope-section
-  .keris-locations--deck:has(.keris-loc-card:hover:not(:first-child))
-  > .keris-loc-card:first-child {
+.case-study-scope-section
+  .case-study-locations--deck:has(.case-study-loc-card:hover:not(:first-child))
+  > .case-study-loc-card:first-child {
   background-color: var(--bg-primary);
   border-color: var(--border-light);
 }
 
-.keris-scope-section
-  .keris-locations--deck:has(.keris-loc-card:hover:not(:first-child))
-  > .keris-loc-card:first-child .ks-loc__top {
+.case-study-scope-section
+  .case-study-locations--deck:has(.case-study-loc-card:hover:not(:first-child))
+  > .case-study-loc-card:first-child .ks-loc__top {
   border-bottom-color: var(--border-light);
 }
 
-.keris-scope-section
-  .keris-locations--deck:has(.keris-loc-card:hover:not(:first-child))
-  > .keris-loc-card:first-child .ks-loc__name,
-.keris-scope-section
-  .keris-locations--deck:has(.keris-loc-card:hover:not(:first-child))
-  > .keris-loc-card:first-child .keris-loc-card__meta,
-.keris-scope-section
-  .keris-locations--deck:has(.keris-loc-card:hover:not(:first-child))
-  > .keris-loc-card:first-child .keris-loc-card__services {
+.case-study-scope-section
+  .case-study-locations--deck:has(.case-study-loc-card:hover:not(:first-child))
+  > .case-study-loc-card:first-child .ks-loc__name,
+.case-study-scope-section
+  .case-study-locations--deck:has(.case-study-loc-card:hover:not(:first-child))
+  > .case-study-loc-card:first-child .case-study-loc-card__meta,
+.case-study-scope-section
+  .case-study-locations--deck:has(.case-study-loc-card:hover:not(:first-child))
+  > .case-study-loc-card:first-child .case-study-loc-card__services {
   color: #3a3a3a;
 }
 
-.keris-scope-section
-  .keris-locations--deck:has(.keris-loc-card:hover:not(:first-child))
-  > .keris-loc-card:first-child .ks-loc__clins {
+.case-study-scope-section
+  .case-study-locations--deck:has(.case-study-loc-card:hover:not(:first-child))
+  > .case-study-loc-card:first-child .ks-loc__clins {
   background-color: var(--bg-brand-light);
   color: var(--interactive-primary);
 }
 
-.keris-scope-section
-  .keris-locations--deck:has(.keris-loc-card:hover:not(:first-child))
-  > .keris-loc-card:first-child .keris-loc-card__img {
+.case-study-scope-section
+  .case-study-locations--deck:has(.case-study-loc-card:hover:not(:first-child))
+  > .case-study-loc-card:first-child .case-study-loc-card__img {
   opacity: 0;
 }
 
@@ -598,7 +598,7 @@
   white-space: nowrap;
 }
 
-.keris-loc-card__meta {
+.case-study-loc-card__meta {
   font-family: "IBM Plex Mono", ui-monospace, monospace;
   font-size: 0.75rem;
   font-weight: 500;
@@ -612,11 +612,11 @@
   flex-wrap: wrap;
 }
 
-.keris-loc-card__meta-main {
+.case-study-loc-card__meta-main {
   min-width: 0;
 }
 
-.keris-loc-card__coord {
+.case-study-loc-card__coord {
   display: inline-flex;
   align-items: baseline;
   margin-inline: 0;
@@ -625,7 +625,7 @@
   white-space: nowrap;
 }
 
-.keris-loc-card__coord-label {
+.case-study-loc-card__coord-label {
   font-family: "IBM Plex Mono", ui-monospace, monospace;
   font-size: 0.56rem;
   font-weight: 500;
@@ -634,7 +634,7 @@
   color: inherit;
 }
 
-.keris-loc-card__coord-redacted {
+.case-study-loc-card__coord-redacted {
   font-family: "Redacted", sans-serif;
   font-size: 0.58rem;
   font-weight: 700;
@@ -645,18 +645,18 @@
   color: #232323;
 }
 
-.keris-loc-card:hover .keris-loc-card__coord-redacted {
+.case-study-loc-card:hover .case-study-loc-card__coord-redacted {
   color: rgba(255, 255, 255, 0.9);
 }
 
 @media (max-width: 767px) {
-  .keris-loc-card__meta {
+  .case-study-loc-card__meta {
     flex-direction: column;
     align-items: flex-start;
     gap: var(--space-2);
   }
 
-  .keris-loc-card__coord {
+  .case-study-loc-card__coord {
     margin-left: 0;
     width: 100%;
     justify-content: flex-start;
@@ -664,28 +664,28 @@
   }
 }
 
-.keris-loc-card__services {
+.case-study-loc-card__services {
   font-size: var(--text-sm);
   line-height: var(--leading-relaxed);
   color: var(--text-primary);
 }
 
-.keris-metrics {
+.case-study-metrics {
   background-color: var(--bg-primary);
   border-block: var(--space-px) solid var(--border-light);
 }
 
-.keris-metrics__title {
+.case-study-metrics__title {
   font-size: var(--text-2xl);
   margin-bottom: var(--space-8);
 }
 
-.keris-metrics__list {
+.case-study-metrics__list {
   list-style: none;
   max-width: 40rem;
 }
 
-.keris-metrics__list li {
+.case-study-metrics__list li {
   position: relative;
   padding-left: var(--space-8);
   margin-bottom: var(--space-4);
@@ -694,7 +694,7 @@
   color: var(--text-primary);
 }
 
-.keris-metrics__list li::before {
+.case-study-metrics__list li::before {
   content: "";
   position: absolute;
   left: 0;
@@ -705,31 +705,31 @@
   border-radius: var(--radius-sm);
 }
 
-.keris-table-wrap {
+.case-study-table-wrap {
   overflow-x: auto;
 }
 
-.keris-table {
+.case-study-table {
   width: 100%;
   border-collapse: collapse;
   font-size: var(--text-sm);
 }
 
-.keris-table th,
-.keris-table td {
+.case-study-table th,
+.case-study-table td {
   text-align: left;
   padding: var(--space-3) var(--space-4);
   border-bottom: var(--space-px) solid var(--border-light);
 }
 
-.keris-table th {
+.case-study-table th {
   width: 11rem;
   color: var(--text-muted);
   font-weight: var(--font-medium);
   vertical-align: top;
 }
 
-.keris-coords-note {
+.case-study-coords-note {
   font-size: var(--text-xs);
   color: var(--text-muted);
   margin-top: var(--space-4);
@@ -754,7 +754,7 @@
 }
 
 .ks-support__label,
-.keris-page__section-label {
+.case-study-page__section-label {
   font-family: var(--font-body);
   font-size: 0.6875rem;
   font-weight: 600;
@@ -946,55 +946,55 @@
   color: var(--text-muted);
 }
 
-/* Keris case study page — tighter vertical rhythm between sections */
-.keris-page .section {
+/* Keris case study page â€” tighter vertical rhythm between sections */
+.case-study-page .section {
   padding-block: var(--space-8);
 }
 
 @media (min-width: 768px) {
-  .keris-page .section {
+  .case-study-page .section {
     padding-block: var(--space-10);
   }
 }
 
 @media (min-width: 1024px) {
-  .keris-page .section {
+  .case-study-page .section {
     padding-block: var(--space-12);
   }
 }
 
-.keris-page .keris-hero {
+.case-study-page .case-study-hero {
   padding-block: var(--space-10) var(--space-8);
 }
 
-.keris-page .keris-split {
+.case-study-page .case-study-split {
   gap: var(--space-8);
 }
 
 @media (min-width: 1024px) {
-  .keris-page .keris-split {
+  .case-study-page .case-study-split {
     gap: var(--space-10);
   }
 }
 
-.keris-page .ks-support {
+.case-study-page .ks-support {
   padding-block: clamp(var(--space-8), 4vw, var(--space-12));
 }
 
-.keris-page .ks-support__grid {
+.case-study-page .ks-support__grid {
   gap: var(--space-8);
 }
 
 @media (min-width: 768px) {
-  .keris-page .ks-support__grid {
+  .case-study-page .ks-support__grid {
     gap: var(--space-10);
   }
 }
 
-.keris-page .ks-coords {
+.case-study-page .ks-coords {
   padding-block: clamp(var(--space-8), 4vw, var(--space-12));
 }
 
-.keris-page .keris-gallery__heading {
+.case-study-page .case-study-gallery__heading {
   margin-bottom: var(--space-6);
 }
