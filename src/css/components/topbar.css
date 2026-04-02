@@ -101,19 +101,18 @@
   border-radius: 0;
 }
 
-.ct-image,
-.topbar .ct-image {
+/* Logo graphic only — never constrain the header row width (see .ct-div-block flex rules) */
+.topbar__brand-logo {
   display: block;
   height: auto;
   width: auto;
-  max-width: min(100%, 350px);
+  max-width: min(100%, 200px);
   max-height: none;
 }
 
 @media (min-width: 769px) {
-  .ct-image,
-  .topbar .ct-image {
-    max-width: min(100%, 350px);
+  .topbar__brand-logo {
+    max-width: min(100%, 200px);
     max-height: none;
   }
 }
@@ -487,9 +486,9 @@
     justify-content: flex-end;
   }
 
-  .topbar .ct-image {
-    max-width: min(100%, 280px);
-    max-height: 2.75rem;
+  .topbar .topbar__brand-logo {
+    max-width: min(100%, 200px);
+    max-height: none;
   }
 
   .oxy-pro-menu-list {
